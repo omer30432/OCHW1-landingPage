@@ -1,0 +1,325 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section img {
+    margin-bottom: 20px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(202, 38, 54);
+}
+
+header {
+  padding: 10px 170px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+header ul,
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+header ul {
+  padding: 0;
+  text-align: center;
+}
+
+footer ul {
+  padding: 20px 20px;
+  gap: 20px;
+}
+
+header ul li,
+footer ul li {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+header ul li a,
+footer ul li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+footer ul li a {
+  font-size: 24px;
+}
+
+header ul li a:hover,
+footer ul li a:hover {
+  color: #76b947;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+header,
+footer {
+  background-color: rgb(214, 32, 50);
+  font-size: large;
+  margin: 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+div h1 {
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  margin-bottom: 60px;
+  gap: 16px;
+}
+
+section div {
+  margin-right: 16px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 16px;
+}
+
+#section1,
+#section2,
+#section3,
+#section4,
+#section5 {
+  margin-right: 170px;
+  margin-left: 170px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  line-height: 1.8;
+  font-size: large;
+  box-shadow: 0 0 3px 2px #000000;
+}
+
+#section1 img,
+#section2 img,
+#section3 img,
+#section4 img,
+#section5 img {
+  width: 300px;
+  height: auto;
+  margin-right: 50px;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
+
+.hero {
+  display: flex;
+}
+
+#section1 {
+  background: rgb(216, 127, 127);
+}
+
+#section2 {
+  background-color: rgb(226, 230, 196);
+}
+
+#section3 {
+  background-color: rgb(248, 248, 248);
+}
+
+#section4 {
+  background-color: rgb(139, 48, 48);
+}
+
+#section5 {
+  background-color: rgb(129, 194, 203);
+}
+
+footer {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("./images/apple-background-footer.jpg") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 120px;
+  background-attachment: fixed;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 320px;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 7px 5px 3px black;
+  border: 10px solid #6e0101;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+#cards h2 {
+  margin-bottom: 60px;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  margin: 0;
+  list-style: none;
+  gap: 20px;
+}
+
+.read-more-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 15px;
+  background-color: #6e0101;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.read-more-btn:hover {
+  background-color: #d45f5f;
+}
+
+.card-headline {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.section-headline {
+  position: relative;
+  text-align: center;
+  margin: 100px 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  #section1,
+  #section2,
+  #section3,
+  #section4,
+  #section5 {
+    margin-right: 50px;
+    margin-left: 50px;
+
+    .card-container {
+      justify-content: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 200px;
+      margin: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header ul li a {
+    font-size: 14px;
+  }
+
+  div h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 60px 30px;
+    margin: 0;
+    background-size: contain;
+    background-position: top center;
+  }
+
+  footer ul {
+    padding: 10px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  footer ul li {
+    margin: 10px 0;
+  }
+}
